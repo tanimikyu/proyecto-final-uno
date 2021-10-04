@@ -6,13 +6,11 @@ body {
     padding: 2.5rem 5rem;
 }
 
-
 .all-container{
     background-color: #ffffffcc;
     width: 100%;
     border-radius: 1rem;
 }
-
 
 .navbar{
     display: flex;
@@ -23,7 +21,6 @@ body {
     border-radius: 1rem 1rem 0 0;
 }
 
-
 #imgLogo{
     width: 3rem;
 }
@@ -31,7 +28,6 @@ body {
 .home-container,
 .contact-container,
 .aboutme-container{
-    align-items: center;
     justify-content: space-around;
     padding: 4rem;
 }
@@ -117,8 +113,11 @@ body {
     }
 }
 
+/* Fuentes */
+
 h1{
-    margin: 0 0 -1rem 0;
+    font-size: 2rem;
+    margin: 1rem 0 -1rem 0;
 }
 
 h2{
@@ -133,6 +132,12 @@ h4{
     font-size: 1rem;
     font-weight: normal;
     margin: 0.5rem 0 0 0;
+}
+
+@media screen and (max-width: 768px){
+    h4{
+        margin: 1rem 0;
+    }
 }
 
 /* Footer */
