@@ -1,0 +1,296 @@
+body {
+    font-family: 'Hind Guntur', sans-serif;
+    background-color: #242324;
+    background-image: url(images/Fondo.png);
+    background-size: inherit;
+    padding: 2.5rem 5rem;
+}
+
+
+.all-container{
+    background-color: #ffffffcc;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background:  #8f8c9f;
+    border-radius: 1rem 1rem 0 0;
+}
+
+
+#imgLogo{
+    width: 3rem;
+}
+
+.home-container,
+.contact-container,
+.aboutme-container{
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem;
+}
+
+.text-container{
+    padding: 0rem 2rem;
+    width: 45%;
+    text-align: justify;
+}
+
+#imgMe{
+    height: 25rem;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+
+    .home-container,
+    .contact-container,
+    .aboutme-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem;
+    }
+
+    .text-container{
+        padding: 0rem 2rem;
+        width: 90%;
+        text-align: justify;
+    }
+
+    #imgMe{
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px){
+
+    body {
+        padding: 2.5rem;
+    }
+
+    .home-container,
+    .contact-container,
+    .aboutme-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem;
+    }
+
+    .text-container{
+        padding: 0rem 2rem;
+        width: 90%;
+        text-align: justify;
+    }
+
+    #imgMe{
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width: 424px){
+
+    body {
+        padding: 2.5rem;
+    }
+
+    .home-container,
+    .contact-container,
+    .aboutme-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    .text-container{
+        padding: 0rem 2rem;
+        width: 95%;
+        text-align: justify;
+    }
+
+    #imgMe{
+        height: 15rem;
+    }
+}
+
+h1{
+    margin: 0 0 -1rem 0;
+}
+
+h2{
+    margin: 0 0 -1rem 0;
+}
+
+h3{
+    margin:0.5rem 0 0 0;
+}
+
+h4{
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0.5rem 0 0 0;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.fab {
+    color: #ffffff70 ;
+    border: transparent;  
+    text-decoration: none;
+}
+  
+  .fab:hover {
+    opacity: 0.6;
+  }
+
+  @media screen and (max-width: 768px){
+    footer{
+        font-size:0.85rem;
+    }
+}
+
+  /* Navbar */
+
+.btn-navbar{
+    cursor: pointer;
+}
+
+.dropbtn{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+}
+
+.iconMenu{
+    width: 2rem;
+    padding: 0.2rem;
+    text-decoration: none;
+}
+
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+      
+#menu ul li {
+    background-color:#8f8c9f;
+}
+  
+#menu ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+   
+#menu ul li {
+    position:relative;
+    float:right;
+    margin:0;
+    padding:0;
+}
+   
+#menu ul li:hover {
+    opacity: 0.9;
+}
+
+/* Navbar desplegable*/
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    right: 0;
+    padding:0;
+}
+   
+#menu ul ul li {
+    width: 10rem;
+}
+    
+#menu ul ul a {
+    text-align: center;
+}
+   
+#menu ul li:hover > ul {
+    display:block;
+}
+ 
+/* Formulario de Contacto */
+   
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-placeholder{
+    border-radius: 0.5rem;
+    height: 2rem;
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+
+.container-mensaje{
+    border-radius: 0.5rem;
+    min-height: 10rem;
+    text-align: center;
+    border: none;
+    padding: 1rem;
+}
+
+.btn-send{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: #8f8c9f;
+    color: white;
+}
+
+.btn-send:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px){
+
+    h2{
+        font-size:1.5rem;
+    }
+
+    .form-container{
+        text-align: justify;
+    }
+}
+
+
+/*Configuración none-block*/
+
+.home-container {
+    display: flex;
+  }
+
+.contact-container,
+.aboutme-container{
+    display: none;
+  }
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Proyecto Uno - Escalab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="all-container">
+      <!-- Nav bar -->
+      <div class="navbar">
+        <img id="imgLogo" src="images/tanilogo.png" />
+        <nav id="menu">
+          <ul>
+            <li>
+              <button class="dropbtn">
+                <img src="images/menu.png" class="iconMenu" alt="icon menu" />
+              </button>
+              <ul>
+                <li><a class="btn-navbar" id="btn-home">Home</a></li>
+                <li><a class="btn-navbar" id="btn-aboutme">About me</a></li>
+
+                <li>
+                  <a class="btn-navbar" id="btn-form">Contacto</a>
+                </li>
+                <li>
+                  <a
+                    class="btn-navbar"
+                    href="https://www.linkedin.com/in/taniacarizh/"
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Home -->
+      <section>
+        <div id="home-container" class="home-container">
+          <div class="text-container">
+            <h1>¡Hola a todos!</h1>
+            <h3>Soy Tania </h3>
+            <p>
+              Desarrolladora Front-End egresada de Laboratoria.
+              <br />
+              Con gran curiosidad y capacidad de autoaprendizaje, buscando así
+              desarrollar un perfil dinámico en base a mis intereses
+              profesionales relacionados con el área de diseño y la tecnología.
+              <br />
+              Mis conocimientos en Arquitectura y Diseño me han ayudado a
+              desarrollar un perfil creativo, con gran capacidad de organización
+              tanto visual como funcional, además de una gran adaptación a las
+              metodologías de trabajo.
+            </p>
+          </div>
+          <img id="imgMe" src="images/me.png" />
+        </div>
+      </section>
+
+      <!-- Form -->
+      <section>
+        <div id="contact-container" class="contact-container">
+          <div class="form-container">
+            <h2>¿Tienes una idea en mente?</h2>
+            <h4>
+              Si quieres comunicarte conmigo dejame un mensaje en la casilla a
+              continuación.
+            </h4>
+            <form
+              id="form"
+              class="form"
+              action="https://formspree.io/f/mvodyqne"
+              method="POST"
+            >
+              <label for="name">Nombre</label>
+              <input
+                class="container-placeholder"
+                name="name"
+                required
+                type="text"
+                id="name"
+                placeholder="Escribe tu nombre aquí"
+              />
+              <label for="email">Correo electrónico</label>
+              <input
+                class="container-placeholder"
+                name="email"
+                type="text"
+                id="email"
+                required
+                placeholder="correo@ejemplo.com"
+              />
+              <label for="message">Mensaje</label>
+              <textarea
+                class="container-mensaje"
+                id="message"
+                name="message"
+              ></textarea>
+              <button type="submit" class="btn-send">ENVIAR</button>
+            </form>
+          </div>
+          <img id="imgMe" src="images/me.png" />
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section>
+        <div id="aboutme-container" class="aboutme-container">
+          <div class="text-container">
+            <h2>Sobre mi</h2>
+            <p>
+              Estudiante autodidacta con gran capacidad de adaptación a diversos
+              entornos laborales. Con un marcado perfil artístico y creativo,
+              siempre en búsqueda de nuevas soluciones o enfoques. Abierta a
+              nuevos aprendizajes y a nuevos desafios.
+            </p>
+            <ul>
+              <li>Uso de herramientas de edición digital, como PS y AI.</li>
+              <li>
+                Uso de Figma para creación y corrección de landing de trabajo.
+              </li>
+              <li>CSS, SASS y Bootstrap.</li>
+              <li>Conocimientos en HTML, JS y React.</li>
+              <li>Conocimientos en VTEX.</li>
+              <li>Conocimientos en Firebase.</li>
+            </ul>
+          </div>
+          <img id="imgMe" src="images/me.png" />
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" type="module"></script>
+  </body>
+
+  <!-- Footer -->
+  <footer>
+    <div class="centrarRedes">
+      <a
+        class="fab fa-twitter-square fa-2x"
+        href="https://www.youtube.com/watch?v=BtLSaxRnIhc"
+      ></a>
+      <a
+        class="fab fa-facebook-square fa-2x"
+        href="https://www.youtube.com/watch?v=BtLSaxRnIhc"
+      >
+      </a>
+      <a
+        class="fab fa-instagram-square fa-2x"
+        href="https://www.youtube.com/watch?v=BtLSaxRnIhc"
+      ></a>
+    </div>
+    &copy;2021 Desarrollado por Tania Cariz. Escalab 2021.
+  </footer>
+</html>
